@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Robto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/fonts/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="/fonts/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="_normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">[as]</h1>
+      <input type="checkbox" name="navtoggle" id="check" />
+      <nav>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#developer">developer</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#kontakt">kontakt</a></li>
+        </ul>
+      </nav>
+      <label for="check" class="navtoggle-label">
+        <span> </span>
+      </label>
+    </header>
+    <div class="welcome">
+      <h1><span>Adam</span> prawie Front-end Developer</h1>
+    </div>
+
+    <section class="intro">
+      <div class="intro-left">
+        <img src="img/img11.jpg" alt="a galaxy" />
+      </div>
+      <div class="intro-middle">
+        <h2>Jak to się zaczęło</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          suscipit, ligula nec pharetra aliquam, nisl orci pharetra mi,
+          pellentesque consectetur augue.
+        </p>
+      </div>
+      <div class="intro-right">
+        <img
+          src="img/img21.jpg"
+          alt="stars overlooking body of water during nighttime"
+        />
+      </div>
+    </section>
+
+    <section class="about-me">
+      <img
+        class="about-img"
+        src="/img/ASport.jpg"
+        alt="creator of portfolio website"
+      />
+      <h1 class="about-title">Adam Portfolio</h1>
+      <h2 class="about-subtitle">Developer</h2>
+      <div class="about-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          dapibus ornare est at lobortis. Maecenas venenatis ultrices interdum.
+          Praesent mi elit, venenatis vel felis a, tempus ullamcorper ante.
+          Curabitur sit amet dictum ex, ac consequat erat. Nunc egestas ligula
+          ac nisl ultricies.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          dapibus ornare est at lobortis. Maecenas venenatis ultrices interdum.
+          Praesent mi elit, venenatis vel felis a, tempus ullamcorper ante.
+          Curabitur sit amet dictum ex, ac consequat erat. Nunc egestas ligula
+          ac nisl ultricies.
+        </p>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <h1>Projekty</h1>
+      <div class="portfolio-items">
+        <!-- Portfolio Item 1 -->
+        <figure class="portfolio-item protos">
+          <img src="img/imgport11.jpg" alt="" />
+          <figcaption>
+            <h2 class="portfolio-title">90' estate</h2>
+            <p class="portfolio-text">Lorem ipsum dolor sit amet</p>
+            <a href="#" class="portfolio-link">sprawdź</a>
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio Item 2 -->
+        <figure class="portfolio-item">
+          <img src="img/imgport21.jpg" alt="" />
+          <figcaption>
+            <p class="portfolio-text">Lorem ipsum dolor sit amet</p>
+            <a href="#" class="portfolio-link">sprawdź</a>
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio Item 3 -->
+        <figure class="portfolio-item">
+          <img src="img/imgport31.jpg" alt="" />
+          <figcaption>
+            <h2 class="portfolio-title">Łan Łąki</h2>
+            <p class="portfolio-text">Lorem ipsum dolor sit amet</p>
+            <a href="#" class="portfolio-link">sprawdź</a>
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio Item 4 -->
+        <figure class="portfolio-item">
+          <img src="img/imgport41.jpg" alt="" />
+          <figcaption>
+            <h2 class="portfolio-title">Mister Robatto</h2>
+            <p class="portfolio-text">Lorem ipsum dolor sit amet</p>
+            <a href="#" class="portfolio-link">sprawdź</a>
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio Item 5 -->
+        <figure class="portfolio-item">
+          <img src="img/imgport51.jpg" alt="" />
+          <figcaption>
+            <h2 class="portfolio-title">Fish & Dish</h2>
+            <p class="portfolio-text">Lorem ipsum dolor sit amet</p>
+            <a href="#" class="portfolio-link">sprawdź</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h1>Kontakt</h1>
+      <form action="" method="post">
+        <label class="name"
+          >Imię:
+          <input type="text" id="name" />
+        </label>
+
+        <label class="email"
+          >Email:
+          <input type="email" />
+        </label>
+
+        <label message="message"
+          >Wiadomość:
+          <textarea name="" id="message" cols="30" rows="10"></textarea>
+        </label>
+
+        <input class="button" type="submit" value="Wyślij" />
+      </form>
+    </section>
+
+    <footer>
+      <p>Znajdziesz mnie na:</p>
+      <div class="social-icons">
+        <i class="fab fa-2x fa-facebook-f"></i>
+        <i class="fab fa-2x fa-github"></i>
+        <i class="fab fa-2x fa-linkedin-in"></i>
+      </div>
+      <p class="copyright">2019 Adam Portfolio</p>
+    </footer>
+  </body>
+</html>
