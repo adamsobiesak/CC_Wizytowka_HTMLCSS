@@ -322,7 +322,7 @@ nav a:hover {
 .portfolio-title {
   color: var(--white);
   margin-bottom: auto;
-  font-size: 2em;
+  font-size: 1em;
 }
 .protos .portfolio-title {
   font-size: 2rem;
@@ -443,12 +443,21 @@ footer {
   .portfolio-items {
     grid-template-columns: repeat(4, 1fr);
   }
-  .portfolio-item h2 {
-    font-size: 1em;
+  
+  .portfolio-title {
+    font-size: .5em;
+    word-wrap: wrap;
   }
+  .portfolio-link {
+    font-size: .5em;
+  }
+  
 }
 
 @media (min-width: 769px) {
+  .portfolio-title {
+    font-size: .75em;
+  }
   .about-img {
     grid-row: 1 / 4;
   }
@@ -496,5 +505,11 @@ footer {
 
   nav a:hover::before {
     transform: scale(1, 1);
+  }
+}
+@media (min-width: 1000px) {
+  .portfolio-title {
+    font-size: 2em;
+    text-align: center;
   }
 }
