@@ -88,13 +88,36 @@ input#check {
   content: "";
   position: absolute;
 }
+#check:checked ~ .navtoggle-label > span {
+  background: transparent;
+}
+
+#check:checked ~ .navtoggle-label > span:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+#check:checked ~ .navtoggle-label > span:after {
+  transform: rotate(45deg);
+  top: 0;
+}
 
 .navtoggle-label span::before {
-  bottom: 7px;
+  top: -6px;
 }
 
 .navtoggle-label span::after {
-  top: 7px;
+  top: 6px;
+}
+.navtoggle-label > span:before,
+.navtoggle-label > span:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
 }
 nav {
   position: absolute;
